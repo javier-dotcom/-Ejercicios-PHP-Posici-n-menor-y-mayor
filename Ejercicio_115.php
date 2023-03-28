@@ -10,7 +10,7 @@
     body{
       text-align: center;
         background-color:rgb(108, 30, 50);
-        color:rgb(30, 108, 88);
+        color:aquamarine;
         width: 90%;
         margin:auto;
         font-size:13px;
@@ -32,18 +32,25 @@
     table,
     tr,
     td{
-      border: black 3px solid;
+      border: black 6px solid;
       padding:3px;
     }
     td{
      background-color:black;
-      border: black 3px solid;
+      border: black 6px solid;
     }
+    .enunciado{
+      font-size:large;
+      color:bisque;
+    }
+
   </style>
 </head>
 <body>
   <h1 class="resul">Ejercicio PHP</h1>
-  <p>Realiza un programa que rellene un array de 6 filas por 10 columnas con números enteros positivos comprendidos entre 0 y 1000 (ambos incluidos). Verificar que no se repita ningún número. A continuación, el programa deberá dar la posición tanto del máximo como del mínimo. 
+  <p class="enunciado">Realiza un programa que rellene un array de 6 filas por 10 columnas con números enteros positivos
+     comprendidos entre 0 y 1000 (ambos incluidos). Verificar que no se repita ningún número.
+      A continuación, el programa deberá dar la posición tanto del máximo como del mínimo. 
 </p>
 <form action="Ejercicio_115.php">
   <button type="submit" name="actualizar">Actualizar</button>
@@ -106,10 +113,11 @@ echo "<br>";
 echo "<br>";
 echo "<div class='resul'>";
 
-echo "<h3>El mayor es<spam> $max </spam>y su posicion es<spam> $maxposi</spam> </h3>";
+echo "<h3>El maximo es<spam> $max </spam>y su posicion es<spam> $maxposi</spam> </h3>";
  echo "<br>";
-echo "<h3>El menor es <spam>$min</spam> y su posicion es <spam> $minposi</spam></h3>";
-echo "</div>";
+echo "<h3>El minimo es <spam>$min</spam> y su posicion es <spam> $minposi</spam></h3>";
+echo "</div> ";
+echo "<br>";
 
  }
 
